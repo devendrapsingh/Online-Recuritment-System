@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Registration Form</title>
+
+</head>
+<BODY bgcolor="#CCCCCC" leftMargin=0 topMargin=0 marginwidth="0" marginheight="0" onLoad="firstLoad()" onUnload="expireSession()">
+
+<center>
+
+<div align=center style="width:100%
+<div id=genmessage><font class="text"><font color=red>
+</font></font></div>
+<!--font class=text-->
+<form name="login" method=post action="Own page/index.html" onSubmit="return checkWholeForm(document.login);"> <!-- mnsubmit="return validate();" -->
+<input type="hidden" name="action" value="1">
+<input type="hidden" name="sessid" value="">
+<table width=100% border=0>
+<tr><td width=30% align="right"><p><h2>User Registration</h2></p></td></tr>
+    <tr>
+	<td width=85% colspan=2 ><div align=center  id=avmessage style="height:20;"></div></td>
+    </tr>
+    <tr>
+        <td width=30% align="right" ><font class="text">Username *</font></td>
+        	
+	<td> <input type="text" name="uname" onBlur="isAvailable();" onFocus="clearmess()" autoComplete="off" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Password *</font></td>
+	<td><input type="password" name="upwd" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Confirm password *</font></td>
+	<td><input type="password" name="cupwd" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Email *</font></td>
+	<td><input type="text" name="email" autoComplete="off" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Confirm email *</font></td>
+	<td><input type="text" name="cemail" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Alternate email</font></td>
+        <td><input type="text" name="aemail" autoComplete="off" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Confirm alternate email</font></td>
+	<td><input type="text" name="caemail" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Enter security key shown below  *</font></td>
+	<td><input type="text" name="security" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Security key </font></td>
+	<td><img src="Images/dev.jpg" alt="Security Image" style="border:solid 1px">
+
+   <input type="hidden" name="sec" value="c53523207eea8c8b6d532c8740637518"></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Security question *</font></td>
+    	 <td><select name=sec_q style="width:250px">
+            <option value="" selected>[Select a Question]</option>
+    <option value="1">What is your father's middle name?</option>
+    <option value="2">What was the name of your first school?</option>
+    <option value="3">Who was your childhood hero?</option>
+    <option value="4">What is your favorite pastime?</option>
+    <option value="5">What is your all-time favorite sports team?</option>
+    <option value="6">What was your high school mascot?</option>
+    <option value="7">What make was your first car or bike?</option>
+    <option value="8">Where did you first meet your spouse?</option>
+    <option value="9">What is your pet's name?</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td width=30% align="right"><font class="text">Security answer *</font></td>
+	<td><input type="text" name="sec_ans" style="width:215px"></td>
+    </tr>
+    <tr>
+        <td width=30%></td><td><input type="submit" value="Register">&nbsp;&nbsp;<input type="reset"><br><br></td>
+    </tr>
+    <tr>
+<td width=30% align=right valign=top><font class=text><font color=red>Note:</font></td><td vlaign=top><p><font class=text>Now that you have registered, you should expect to receive an acknowledgement  at the above email addresses<br>If you don't,  register again and make sure that the email address(es) are correctly provided.</td>
+    </tr>
+</table>
+</form>
+<!--/font-->
+</div>
+</center>
+
+</body>
+</html>
+
