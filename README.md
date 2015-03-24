@@ -1,0 +1,3 @@
+# nitProject
+
+It is web based project for employee recuritment system in institute ...............
